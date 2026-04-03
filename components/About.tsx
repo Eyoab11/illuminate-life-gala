@@ -8,7 +8,7 @@ export default function About() {
           <div className="av-frame">
             <div className="av-inner">
               <div className="av-stat">
-                <span className="av-num">3rd</span>
+                <span className="av-num">2nd</span>
                 <span className="av-sub">Annual Gala</span>
               </div>
               <div className="av-stat">
@@ -20,7 +20,7 @@ export default function About() {
                 <span className="av-sub">Fundraising Goal</span>
               </div>
               <div className="av-stat">
-                <span className="av-num">3</span>
+                <span className="av-num">4</span>
                 <span className="av-sub">Programs Funded</span>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function About() {
             The Illuminate Life Gala unites visionaries, philanthropists, and thought leaders for one extraordinary evening dedicated to transforming healthcare access in underserved communities.
           </p>
           <p className="reveal d2 lead">
-            Building on two remarkable years, our third gathering reaches further — funding mental health, substance recovery, and surgical access for those who need it most.
+            Building on one remarkable year, our second gathering reaches further — funding mental health, substance recovery, and surgical access for those who need it most.
           </p>
           <Link href="#tickets" className="btn-primary reveal d3" style={{ display: 'inline-block', marginTop: '28px' }}>
             <span>Join the Movement</span>

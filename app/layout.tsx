@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Illuminate Life Gala 2026 — June 12 · Beverly Hills',
+  title: 'Illuminate Life Gala',
   description: 'The Third Annual Illuminate Life Gala — Friday, June 12, 2026. The Beverly Hilton, Beverly Hills. A philanthropic evening for mental health, recovery, and surgical access.',
 };
 
