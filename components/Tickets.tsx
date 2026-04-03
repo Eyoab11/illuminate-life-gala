@@ -74,8 +74,7 @@ export default function Tickets() {
               </ul>
               <button
                 onClick={() => openModal(ticket.name.replace('\n', ' '), `$${ticket.price}`)}
-                className={ticket.featured ? 'btn-primary' : 'btn-ghost'}
-                style={{ width: '100%', textAlign: 'center', border: 'none', cursor: 'pointer' }}
+                className="btn-primary tix-btn"
               >
                 <span>{ticket.featured ? 'Reserve Table' : 'Reserve Seat'}</span>
               </button>

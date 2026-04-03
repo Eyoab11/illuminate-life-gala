@@ -16,6 +16,12 @@ const programs = [
     ghost: 'III',
     name: 'Surgical Access',
     desc: 'Providing life-saving surgeries to individuals who cannot afford care — partnering with top surgical teams to eliminate every financial barrier to life-changing treatment.'
+  },
+  {
+    num: '04',
+    ghost: 'IV',
+    name: 'Youth Education',
+    desc: 'Expanding access to quality education for young people through scholarships, mentorship, and learning resources — equipping the next generation with the knowledge, confidence, and opportunity to reach their full potential and shape a more equitable future.'
   }
 ];
 
@@ -25,10 +31,10 @@ export default function Programs() {
       <div className="programs-inner">
         <div className="prog-header">
           <p className="sec-label reveal">What We Fund</p>
-          <h2 className="sec-title reveal">Three pillars of <em>transformative</em> care</h2>
+          <h2 className="sec-title reveal">Four pillars of <em>transformative</em> care</h2>
         </div>
         <div className="prog-grid">
-          {programs.map((prog, i) => (
+          {programs.slice(0, 3).map((prog, i) => (
             <div key={prog.num} className={`prog-card reveal ${i === 1 ? 'd1' : i === 2 ? 'd2' : ''}`}>
               <span className="prog-ghost">{prog.ghost}</span>
               <p className="prog-num">Program {prog.num}</p>
@@ -36,6 +42,14 @@ export default function Programs() {
               <p className="prog-desc">{prog.desc}</p>
             </div>
           ))}
+        </div>
+        <div className="prog-grid-bottom">
+          <div className="prog-card prog-card--wide reveal d1">
+            <span className="prog-ghost">{programs[3].ghost}</span>
+            <p className="prog-num">Program {programs[3].num}</p>
+            <p className="prog-name">{programs[3].name}</p>
+            <p className="prog-desc">{programs[3].desc}</p>
+          </div>
         </div>
       </div>
     </div>
