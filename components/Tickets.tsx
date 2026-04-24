@@ -5,6 +5,7 @@ const tickets = [
     tier: 'Individual',
     name: 'Illuminator\nExperience',
     price: '750',
+    quantity: 1,
     perks: [
       'Gourmet dinner & wine pairings',
       'Premium open bar access',
@@ -18,6 +19,7 @@ const tickets = [
     tier: 'Table of 10',
     name: 'Circle of\nIllumination',
     price: '6,500',
+    quantity: 10,
     perks: [
       'Reserved table — front sections',
       'Pre-event VIP reception',
@@ -32,6 +34,7 @@ const tickets = [
     tier: 'VIP Individual',
     name: 'Visionary\nCollection',
     price: '2,500',
+    quantity: 1,
     perks: [
       'Private VIP pre-event reception',
       'Meet & greet with honorees',
@@ -45,9 +48,16 @@ const tickets = [
 ];
 
 export default function Tickets() {
-  const openModal = (tier: string, price: string) => {
+  const openModal = (tier: string, tierName: string, price: string, quantity: number) => {
     // Modal logic will be handled by TicketModal component
-    const event = new CustomEvent('openTicketModal', { detail: { tier, price } });
+    const event = new CustomEvent('openTicketModal', { 
+      detail: { 
+        tier, 
+        tierName,
+        price,
+        quantity
+      } 
+    });
     window.dispatchEvent(event);
   };
 
@@ -73,7 +83,7 @@ export default function Tickets() {
                 ))}
               </ul>
               <button
-                onClick={() => openModal(ticket.name.replace('\n', ' '), `$${ticket.price}`)}
+                onClick={() => openModal(ticket.tier, ticket.name.replace('\n', ' '), ticket.price, ticket.quantity)}
                 className="btn-primary tix-btn"
               >
                 <span>{ticket.featured ? 'Reserve Table' : 'Reserve Seat'}</span>

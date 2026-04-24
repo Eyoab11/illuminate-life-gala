@@ -7,6 +7,7 @@ import Experience from '@/components/Experience';
 import Tickets from '@/components/Tickets';
 import Sponsors from '@/components/Sponsors';
 import Contact from '@/components/Contact';
+import Partners from '@/components/Partners';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
 import TicketModal from '@/components/TicketModal';
@@ -25,6 +26,7 @@ export default function Home() {
       <Tickets />
       <Sponsors />
       <Contact />
+      <Partners />
       <Footer />
       <TicketModal />
       <RevealOnScroll />

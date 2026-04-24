@@ -36,7 +36,7 @@ export default function About() {
             The Illuminate Life Gala unites visionaries, philanthropists, and thought leaders for one extraordinary evening dedicated to transforming healthcare access in underserved communities.
           </p>
           <p className="reveal d2 lead">
-            Building on one remarkable year, our second gathering reaches further — funding mental health, substance recovery, and surgical access for those who need it most.
+            Building on one remarkable year, our second gathering reaches further — funding mental health, substance recovery, surgical access and education for those who need it most.
           </p>
           <Link href="#tickets" className="btn-primary reveal d3" style={{ display: 'inline-block', marginTop: '28px' }}>
             <span>Join the Movement</span>

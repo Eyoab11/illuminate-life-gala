@@ -25,19 +25,28 @@ export default function Navigation() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    closeMenu();
+  };
+
   return (
     <>
       <nav id="nav" className={scrolled ? 'scrolled' : ''}>
         <Link href="/" className="nav-logo">Illuminate Life Gala</Link>
         <ul className="nav-links">
-          <li><Link href="#about">Mission</Link></li>
-          <li><Link href="#programs">Programs</Link></li>
-          <li><Link href="#experience">Evening</Link></li>
-          <li><Link href="#tickets">Tickets</Link></li>
-          <li><Link href="#sponsors">Sponsors</Link></li>
-          <li><Link href="#contact">Contact</Link></li>
+          <li><Link href="#about" onClick={(e) => scrollToSection(e, '#about')}>Mission</Link></li>
+          <li><Link href="#programs" onClick={(e) => scrollToSection(e, '#programs')}>Programs</Link></li>
+          <li><Link href="#experience" onClick={(e) => scrollToSection(e, '#experience')}>Evening</Link></li>
+          <li><Link href="#tickets" onClick={(e) => scrollToSection(e, '#tickets')}>Tickets</Link></li>
+          <li><Link href="#sponsors" onClick={(e) => scrollToSection(e, '#sponsors')}>Sponsors</Link></li>
+          <li><Link href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>Contact</Link></li>
         </ul>
-        <Link href="#tickets" className="nav-cta">
+        <Link href="#tickets" className="nav-cta" onClick={(e) => scrollToSection(e, '#tickets')}>
           <span>Reserve Your Seat</span>
         </Link>
         <button 
@@ -64,14 +73,14 @@ export default function Navigation() {
             </button>
           </div>
           <ul className="mobile-menu-links">
-            <li><Link href="#about" onClick={closeMenu}>Mission</Link></li>
-            <li><Link href="#programs" onClick={closeMenu}>Programs</Link></li>
-            <li><Link href="#experience" onClick={closeMenu}>Evening</Link></li>
-            <li><Link href="#tickets" onClick={closeMenu}>Tickets</Link></li>
-            <li><Link href="#sponsors" onClick={closeMenu}>Sponsors</Link></li>
-            <li><Link href="#contact" onClick={closeMenu}>Contact</Link></li>
+            <li><Link href="#about" onClick={(e) => scrollToSection(e, '#about')}>Mission</Link></li>
+            <li><Link href="#programs" onClick={(e) => scrollToSection(e, '#programs')}>Programs</Link></li>
+            <li><Link href="#experience" onClick={(e) => scrollToSection(e, '#experience')}>Evening</Link></li>
+            <li><Link href="#tickets" onClick={(e) => scrollToSection(e, '#tickets')}>Tickets</Link></li>
+            <li><Link href="#sponsors" onClick={(e) => scrollToSection(e, '#sponsors')}>Sponsors</Link></li>
+            <li><Link href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>Contact</Link></li>
           </ul>
-          <Link href="#tickets" className="mobile-menu-cta" onClick={closeMenu}>
+          <Link href="#tickets" className="mobile-menu-cta" onClick={(e) => scrollToSection(e, '#tickets')}>
             <span>Reserve Your Seat</span>
           </Link>
         </div>
