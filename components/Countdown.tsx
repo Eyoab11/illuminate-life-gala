@@ -7,7 +7,9 @@ export default function Countdown() {
 
   useEffect(() => {
     const tick = () => {
-      const diff = new Date('2026-06-12T18:00:00').getTime() - new Date().getTime();
+      // Target: October 15, 2026 at 6:00 PM PDT (Los Angeles) = 01:00 UTC on Oct 16
+      // Hardcoded as UTC so every visitor worldwide sees the exact same countdown
+      const diff = new Date('2026-10-16T01:00:00Z').getTime() - new Date().getTime();
       if (diff <= 0) return;
 
       setTime({

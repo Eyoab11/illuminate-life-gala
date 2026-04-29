@@ -33,7 +33,7 @@ export default function Hero() {
         </h1>
         <div className="hero-divider" />
         <div className="hero-meta">
-          <p className="hero-date">Friday, June 12, 2026 &nbsp;·&nbsp; 6:00 PM - 11:30 PM</p>
+          <p className="hero-date">Thursday, October 15, 2026 &nbsp;·&nbsp; 6:00 PM - 11:30 PM</p>
           <p className="hero-venue">The Beverly Hilton &nbsp;·&nbsp; Beverly Hills, California</p>
         </div>
         <div className="hero-actions">
