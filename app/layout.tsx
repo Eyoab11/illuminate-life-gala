@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Illuminate Life Gala',
-  description: 'The Third Annual Illuminate Life Gala — Friday, June 12, 2026. The Beverly Hilton, Beverly Hills. A philanthropic evening for mental health, recovery, and surgical access.',
+  description: 'The Second Annual Illuminate Life Gala — Thursday, October 15, 2026. The Beverly Hilton, Beverly Hills. A philanthropic evening for mental health, recovery, and surgical access.',
 };
 
 export default function RootLayout({

@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <p className="footer-col-title">Event Info</p>
           <ul className="footer-links">
-            <li><Link href="#">June 12, 2026</Link></li>
+            <li><Link href="#">October 15, 2026</Link></li>
             <li><Link href="#">The Beverly Hilton</Link></li>
             <li><Link href="#">Beverly Hills, CA</Link></li>
             <li><Link href="#">6:00 PM – 11:30 PM</Link></li>

@@ -127,7 +127,7 @@ export default function Contact() {
           <div className="ct-details reveal">
             <div>
               <p className="ct-label">Date & Time</p>
-              <p className="ct-value">Friday, June 12, 2026 · 6:00 PM – 11:30 PM</p>
+              <p className="ct-value">Thursday, October 15, 2026 · 6:00 PM – 11:30 PM PDT</p>
             </div>
             <div>
               <p className="ct-label">Venue</p>
