@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './dr-ersno-sections.css';
 
 export const metadata: Metadata = {
   title: 'Illuminate Life Gala',
