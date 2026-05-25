@@ -78,10 +78,24 @@ export default function Contact() {
 
   const selectedOption = INTEREST_OPTIONS.find((o) => o.value === interest);
 
+  // Email validation regex
+  const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
+    
+    // Validate required fields
     if (!firstName.trim() || !lastName.trim() || !email.trim() || !interest) {
       setError('Please fill in all required fields.');
+      return;
+    }
+
+    // Validate email format
+    if (!isValidEmail(email.trim())) {
+      setError('Please enter a valid email address.');
       return;
     }
 

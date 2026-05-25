@@ -52,10 +52,22 @@ export default function TicketModal() {
     document.body.style.overflow = '';
   };
 
+  // Email validation regex
+  const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const submitModal = async () => {
-    // Validation
+    // Validate required fields
     if (!firstName.trim() || !lastName.trim() || !email.trim() || !phone.trim()) {
       setError('Please fill in all required fields.');
+      return;
+    }
+
+    // Validate email format
+    if (!isValidEmail(email.trim())) {
+      setError('Please enter a valid email address.');
       return;
     }
 
