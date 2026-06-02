@@ -1,0 +1,16 @@
+services:
+  lem-event-app:
+    container_name: illuminate-life-gala-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_URL=https://api.levyeromomedia.com
+    ports:
+      - "127.0.0.1:7701:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+
+
