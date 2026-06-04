@@ -1,0 +1,10 @@
+# robots.txt for Illuminate Life Gala
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://illuminatelifegala.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

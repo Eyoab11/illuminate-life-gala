@@ -41,10 +41,8 @@
 .dr-ersno-3-image {
   width: 100%;
   height: 100%;
-  background-image: url('/modified.png');
-  background-size: cover;
-  background-position: 80% center;
   position: relative;
+  overflow: hidden;
 }
 
 .dr-ersno-3-image::after {
@@ -56,6 +54,8 @@
     transparent 0%,
     rgba(8, 8, 13, 0.15) 100%
   );
+  z-index: 1;
+  pointer-events: none;
 }
 
 .dr-ersno-3-content {

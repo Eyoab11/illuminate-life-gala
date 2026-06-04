@@ -42,8 +42,8 @@ export default function Footer() {
         <p className="footer-copy">© 2026 Illuminate Life Gala &nbsp;·&nbsp; All Rights Reserved</p>
         <div className="footer-socials">
           <Link href="#">Instagram</Link>
-          <Link href="#">LinkedIn</Link>
-          <Link href="#">Facebook</Link>
+          <Link href="https://www.linkedin.com/in/illuminate-life-gala-385236413/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+          <Link href="https://www.facebook.com/profile.php?id=61590503279989" target="_blank" rel="noopener noreferrer">Facebook</Link>
         </div>
       </div>
     </footer>

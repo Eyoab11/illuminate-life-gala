@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <div id="about" className="about-wrap">
+    <section id="about" className="about-wrap" aria-labelledby="about-heading">
       <div className="about-inner">
-        <div className="about-visual reveal">
+        <div className="about-visual reveal" role="complementary" aria-label="Event statistics">
           <div className="av-frame">
             <div className="av-inner">
               <div className="av-stat">
@@ -28,21 +28,26 @@ export default function About() {
         </div>
         <div className="about-text">
           <p className="sec-label reveal">Our Mission</p>
-          <h2 className="sec-title reveal">
+          <h2 id="about-heading" className="sec-title reveal">
             Where <em>compassion</em><br />becomes action
           </h2>
-          <div className="gold-rule reveal" />
+          <div className="gold-rule reveal" aria-hidden="true" />
           <p className="reveal d1">
             The Illuminate Life Gala unites visionaries, philanthropists, and thought leaders for one extraordinary evening dedicated to transforming healthcare access in underserved communities.
           </p>
           <p className="reveal d2 lead">
             Building on one remarkable year, our second gathering reaches further — funding mental health, substance recovery, surgical access and education for those who need it most.
           </p>
-          <Link href="#tickets" className="btn-primary reveal d3" style={{ display: 'inline-block', marginTop: '28px' }}>
+          <Link 
+            href="#tickets" 
+            className="btn-primary reveal d3" 
+            style={{ display: 'inline-block', marginTop: '28px' }}
+            aria-label="Join the movement and reserve your tickets"
+          >
             <span>Join the Movement</span>
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
