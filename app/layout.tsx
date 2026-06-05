@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification-code-here', // Replace with actual verification code
+    google: 'IgrqNd_Q-yrbcbs6hjjMdU7EUbwoFV_kUp5_U9pQV-Y',
   },
   alternates: {
     canonical: 'https://illuminatelifegala.com',
@@ -77,6 +77,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6WEWK97P"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-NR6WEWK97P');
+            `,
+          }}
+        />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tenor+Sans&family=Cinzel:wght@400;500;600&display=swap"
