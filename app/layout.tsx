@@ -5,7 +5,7 @@ import './dr-ersno-sections.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://illuminatelifegala.com'),
   title: 'Illuminate Life Gala 2026 | Mental Health & Healthcare Charity Event Beverly Hills',
-  description: 'Join Dr. Ersno Eromo for the Second Annual Illuminate Life Gala on October 15, 2026 at The Beverly Hilton. A prestigious charity gala supporting mental health, substance recovery, and surgical access for underserved communities in Los Angeles and beyond.',
+  description: 'The Second Annual Illuminate Life Gala returns October 15, 2026 at The Beverly Hilton. An elegant philanthropic evening uniting leaders to support mental health, substance recovery, and surgical access for underserved communities in Los Angeles.',
   keywords: [
     'mental health gala Beverly Hills',
     'charity gala Beverly Hills 2026',
@@ -28,25 +28,25 @@ export const metadata: Metadata = {
   publisher: 'Illuminate Life Foundation',
   openGraph: {
     title: 'Illuminate Life Gala 2026 | October 15 at The Beverly Hilton',
-    description: 'Join Dr. Ersno Eromo for the Second Annual Illuminate Life Gala. A transformative charity event dedicated to mental health, substance recovery, and surgical access for underserved communities.',
+    description: 'The Second Annual Illuminate Life Gala brings together visionaries and philanthropists for an elegant evening supporting mental health, substance recovery, and surgical access. October 15, 2026 at The Beverly Hilton, Beverly Hills.',
     url: 'https://illuminatelifegala.com',
     siteName: 'Illuminate Life Gala',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/modified.png',
+        url: '/icon.svg',
         width: 1200,
         height: 630,
-        alt: 'Dr. Ersno Eromo - Illuminate Life Gala Founder and Distinguished Physician',
+        alt: 'Illuminate Life Gala 2026 - A Philanthropic Evening at The Beverly Hilton',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Illuminate Life Gala 2026 | Mental Health Charity Event Beverly Hills',
-    description: 'Join us October 15, 2026 at The Beverly Hilton for an evening of compassion and change. Supporting mental health, recovery, and surgical access.',
-    images: ['/modified.png'],
+    title: 'Illuminate Life Gala 2026 | October 15 at The Beverly Hilton',
+    description: 'An elegant philanthropic evening supporting mental health, substance recovery, and surgical access for underserved communities. Join us October 15, 2026.',
+    images: ['/icon.svg'],
     creator: '@illuminatelife',
   },
   robots: {
