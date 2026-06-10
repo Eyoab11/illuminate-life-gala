@@ -15,7 +15,8 @@ export default function Experience() {
       <div className="experience-inner">
         <div className="exp-header">
           <p className="sec-label reveal">The Evening</p>
-          <h2 className="sec-title reveal">An <em>unforgettable</em> night<br />crafted in every detail</h2>
+          <h2 className="sec-title reveal">An <em>unforgettable</em> night</h2>
+          <p className="sec-subtitle reveal">Thoughtfully crafted in every detail</p>
         </div>
         <div className="timeline" id="timeline">
           {timeline.map((item) => (

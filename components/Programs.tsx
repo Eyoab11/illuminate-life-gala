@@ -9,13 +9,13 @@ const programs = [
     num: '02',
     ghost: 'II',
     name: 'Substance Recovery',
-    desc: 'Funding evidence-based recovery programs that address the root causes of addiction with dignity, medical expertise, and the long-term community support that changes lives.'
+    desc: 'Funding evidence-based recovery programs that address the root causes of addiction with dignity, medical expertise, and long-term community support that changes lives.'
   },
   {
     num: '03',
     ghost: 'III',
     name: 'Surgical Access',
-    desc: 'Providing life-saving surgeries to individuals who cannot afford care — partnering with top surgical teams to eliminate every financial barrier to life-changing treatment.'
+    desc: 'Providing life-saving surgeries to individuals who cannot afford care by partnering with top surgical teams to eliminate every financial barrier to life-changing treatment.'
   },
   {
     num: '04',

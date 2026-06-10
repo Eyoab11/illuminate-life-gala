@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="ho-dia" />
           <div className="ho-line r" />
         </div>
-        <p className="hero-eyebrow">Third Annual &nbsp;·&nbsp; Philanthropic Gala &nbsp;·&nbsp; Beverly Hills</p>
+        <p className="hero-eyebrow">Second Annual &nbsp;·&nbsp; Philanthropic Gala &nbsp;·&nbsp; Beverly Hills</p>
         <h1 className="hero-title">
           Illuminate<br />
           <em>Life</em>
@@ -56,10 +56,6 @@ export default function Hero() {
             Our Mission
           </Link>
         </div>
-      </div>
-      <div className="hero-scroll" aria-label="Scroll down for more content">
-        <span>Scroll</span>
-        <div className="scroll-stem" />
       </div>
     </section>
   );
